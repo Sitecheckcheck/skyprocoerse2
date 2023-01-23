@@ -63,4 +63,4 @@ alert(user[info]);
 
 // задание 10
 const yourName = prompt('Какое ваше имя?');
-alert(`Привет, ${yourName} !`);
+alert(`Привет, ${yourName.toUpperCase()} !`);
