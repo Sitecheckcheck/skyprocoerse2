@@ -1,44 +1,44 @@
-// задание 1
-let a = 10;
-alert(a);
-a = 20;
-alert(a);
+// // задание 1
+// let a = 10;
+// alert(a);
+// a = 20;
+// alert(a);
 
-// задание 2
-const dateIphone = 1111;
-alert(dateIphone);
+// // задание 2
+// const dateIphone = 2007;
+// alert(dateIphone);
 
-// задание 3
-const nameFirst = 'Danilov';
-alert(nameFirst);
+// // задание 3
+// const nameFirst = 'Брендан Айк';
+// alert(nameFirst);
 
-// задание 4
-let num1 = 10;
-let num2 = 2;
-alert([num1+num2,num1-num2,num1*num2,num1/num2]);
+// // задание 4
+// let num1 = 10;
+// let num2 = 2;
+// alert([num1+num2,num1-num2,num1*num2,num1/num2]);
 
-// задание 5
-let result = 2**5;
-alert(result);
+// // задание 5
+// let result = 2**5;
+// alert(result);
 
-// задание 6
-let a6 = 9;
-let b6 = 2;
-alert(a6%b6);
+// // задание 6
+// const a6 = 9;
+// const b6 = 2;
+// alert(a6%b6);
 
-// задание 7
-let num = 1;
-num += 5;
-num -= 3;
-num *= 7;
-num /= 3;
-num++;
-num--;
-alert(num);
+// // задание 7
+// let num = 1;
+// num += 5;
+// num -= 3;
+// num *= 7;
+// num /= 3;
+// num++;
+// num--;
+// alert(num);
 
-// задание 8
-let age = prompt('Сколько вам лет?');
-alert(`Ваш возраст в годах: ${age}`);
+// // задание 8
+// const age = prompt('Сколько вам лет?');
+// alert(`Ваш возраст в годах: ${age}`);
 
 // задание 9.0
 let user = {
@@ -62,5 +62,5 @@ let info = prompt('Какую информацию хотите узнать о 
 alert(user[info]);
 
 // задание 10
-let yourName = prompt('Какое ваше имя?');
+const yourName = prompt('Какое ваше имя?');
 alert(`Привет, ${yourName} !`);
