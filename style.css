@@ -25,8 +25,6 @@ body {
   font-weight: 700;
   font-size: 64px;
   line-height: 78px;
-  display: flex;
-  align-items: center;
   color: #FFFFFF;
 }
 .header__text {
@@ -43,8 +41,9 @@ body {
   font-weight: 900;
 }
 .header__button {
-  width: 234.06px;
-  height: 48.6px;
+  border: none;
+  width: 234px;
+  height: 48px;
   background: #9C0332;
   border-radius: 30px;
   font-style: normal;
@@ -52,6 +51,10 @@ body {
   font-size: 18px;
   line-height: 22px;
   color: #FFFFFF;
+  transition: transform 0.2s;
+}
+.header__button:hover {
+  transform: scale(1.05);
 }
 
 .games {
@@ -72,6 +75,7 @@ body {
   border-radius: 18px;
   grid-column: span 4;
   position: relative;
+  transition: transform 0.2s;
 }
 .game__text {
   font-style: normal;
@@ -82,4 +86,45 @@ body {
   position: absolute;
   left: 32px;
   bottom: 32px;
+}
+.game:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 480px) {
+  .header {
+    height: 735px;
+    background-image: url(img/header-mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 217px;
+  }
+  .header__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+  }
+  .header__text {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 32px;
+    text-align: center;
+    width: 343px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .header__button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .games {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
 }/*# sourceMappingURL=style.css.map */

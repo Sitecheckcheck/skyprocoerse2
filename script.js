@@ -1,66 +1,59 @@
-// задание 1
-let a = 10;
-alert(a);
-a = 20;
-alert(a);
+// // Задание 1
+// let password = "пароль";
+// let passwordIn = prompt("Введите пароль");
+// if (password === passwordIn) {
+//   alert("Пароль введен верно");
+// } else {
+//   alert("Пароль введен неправильно");
+// }
 
-// задание 2
-const dateIphone = 2007;
-alert(dateIphone);
+// // Задание 2
+// let c = 4;
+// if (c > 0 && c<10) {
+//     console.log('Верно');
+// } else {
+//     console.log('Неверно');
+// }
 
-// задание 3
-const nameFirst = 'Брендан Айк';
-alert(nameFirst);
+// // Задание 3
+// let d = 56;
+// let e = 120;
+// if (d > 100 || e > 100) {
+//     console.log('Верно');
+// } else {
+//     console.log('Неверно');
+// }
 
-// задание 4
-let num1 = 10;
-let num2 = 2;
-alert([num1+num2,num1-num2,num1*num2,num1/num2]);
+// // Задание 4
+// let a = "2";
+// let b = '3';
+// alert(Number(a)+Number(b));
 
-// задание 5
-let result = 2**5;
-alert(result);
+// // Задание 5
+// let monthNumber = Number(prompt("введите номер месяца"));
+// switch (monthNumber) {
+//   case 12:
+//   case 1:
+//   case 2:
+//     console.log("зима");
+//     break;
+//   case 3:
+//   case 4:
+//   case 5:
+//     console.log("весна");
+//     break;
+//   case 6:
+//   case 7:
+//   case 8:
+//     console.log("лето");
+//     break;
+//   case 9:
+//   case 10:
+//   case 11:
+//     console.log("осень");
+//     break;
+//   default:
+//     console.log("Нет такого месяца");
+//     break;
+// }
 
-// задание 6
-const a6 = 9;
-const b6 = 2;
-alert(a6%b6);
-
-// задание 7
-let num = 1;
-num += 5;
-num -= 3;
-num *= 7;
-num /= 3;
-num++;
-num--;
-alert(num);
-
-// задание 8
-const age = prompt('Сколько вам лет?');
-alert(`Ваш возраст в годах: ${age}`);
-
-// задание 9.0
-let user = {
-    name: 'Pavel',
-    age: 34,
-    isAdmin: true
-}
-
-// задание 9.1
-user['city of residence']='Krasnogorsk';
-
-
-// задание 9.2
-user.age = 28;
-
-// задание 9.3
-delete user['city of residence'];
-
-// задание 9.4
-let info = prompt('Какую информацию хотите узнать о пользователе?', 'name, age, isAdmin');
-alert(user[info]);
-
-// задание 10
-const yourName = prompt('Какое ваше имя?');
-alert(`Привет, ${yourName.toUpperCase()} !`);
