@@ -1,40 +1,87 @@
-// Задание 1;
-for (let hello = 0; hello < 2; hello++) {
-  console.log("Привет");
-}
+// // Задание 1;
+// const minNumber = (a, b) => {
+//   if (a < b) {
+//     return a;
+//   } else {
+//     return b;
+//   }
+// }
 
-// Задание 2
-for (let index = 1; index <= 5; index++) {
-  console.log(index);
-}
+// // Задание 2
+// function anEvenNumber() {
+//   let userNumber = Number(prompt("Введите число"));
+//   if (userNumber % 2 == 0) {
+//     return "Число четное";
+//   } else {
+//     return "Число нечетное";
+//   }
+// }
 
-// Задание 3
-for (let index = 7; index <= 22; index++) {
-  console.log(index);
-}
+// // Задание 3.1
+// function consolSquared() {
+//   let userNumber = Number(prompt("Введите число"));
+//   console.log(userNumber ** 2);
+// }
 
-// Задание 4
-const obj = {
-  Коля: 200,
-  Вася: 300,
-  Петя: 400,
-};
+// // Задание 3.2
+// function returnSquared() {
+//   let userNumber = Number(prompt("Введите число"));
+//   return userNumber ** 2;
+// }
 
-for (const key in obj) {
-  console.log(`${key} - зарплата ${obj[key]}`);
-}
+// // Задание 4
+// const hello = () => {
+//   let userAge = Number(prompt('Сколько вам лет?'));
+//   if (userAge < 0) {
+//     alert('Вы ввели неправильное значение');
+//   } else if (userAge < 13) {
+//     alert('Привет, друг!');
+//   } else {
+//     alert('Добро пожаловать!');
+//   }
+// }
 
 // Задание 5
-let n = 1000;
-let i = 1;
-while (n >= 50) {
-  n /= 2;
-  i++;
-}
-console.log(n);
-console.log(i);
+// const isNumber = (a, b) => {
+//   if (isNaN(a) || isNaN(b)) {
+//     return "Одно или оба значения не являются числом";
+//   } else {
+//     return a * b;
+//   }
+// };
 
-// Задание 6
-for (let a = 6; a <= 31; a+=7) {
-    alert (`Сегодня пятница, ${a}-е число. Необходимо подготовить отчет.`)  
+// // Задание 6
+// function cubeNumber() {
+//   let a = prompt("введите число");
+//   if (!isNaN(a)) {
+//     b = a ** 3;
+//     c = `${a} в кубе равняется ${b}`;
+//     return c;
+//   } else {
+//     return "Переданный параметр не является числом";
+//   }
+// };
+
+// Задание 7
+function buttonGame() {
+  let month = prompt("Введите номер месяца");
+  if (!isNaN(month)) {
+    if (month == 12 || month == 1 || month == 2) {
+      console.log("Зима");
+    } else if (month == 3 || month == 4 || month == 5) {
+      console.log("Весна");
+    } else if (month == 6 || month == 7 || month == 8) {
+      console.log("Лето");
+    } else if (month == 9 || month == 10 || month == 11) {
+      console.log("Осень");
+    } else if (month == null) {
+      console.log("отмена игры");
+    } else {
+      alert("Нет такого месяца");
+      buttonGame();
+    }
+  } else {
+    alert("Необходимо ввести число");
+    buttonGame();
+  }
 }

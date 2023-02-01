@@ -1,133 +1,193 @@
-body{
-    font-family: 'Montserrat', sans-serif;
+body {
+  font-family: "Montserrat", sans-serif;
 }
 
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.center{
-    padding-left: calc(50% - 600px);
-    padding-right: calc(50% - 600px);
+.center {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
 }
 
-.header{
-    height: 1024px;
-    background-image: url(img/header_bg.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    padding-top: 217px;
-    &__title{
-        font-style: normal;
-        font-weight: 700;
-        font-size: 64px;
-        line-height: 78px;
-        color: #FFFFFF;
+.header {
+  height: 1024px;
+  background-image: url(img/header_bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 217px;
+  &__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 78px;
+    color: #ffffff;
+  }
+  &__text {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 32px;
+    color: #ffffff;
+    margin-top: 32px;
+    margin-bottom: 44px;
+    width: 481px;
+    &_bolt {
+      font-weight: 900;
     }
-    &__text{
-        font-style: normal;
-        font-weight: 300;
-        font-size: 18px;
-        line-height: 32px;
-        color: #FFFFFF;
-        margin-top: 32px;
-        margin-bottom: 44px;
-        width: 481px;
-        &_bolt{
-            font-weight: 900;
-        }
-    }
-    &__button{
-        border: none;
-        width: 234px;
-        height: 48px;
-        background: #9C0332;
-        border-radius: 30px;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 22px;
-        color: #FFFFFF;
-        transition: transform 0.2s;
-        &:hover{
-            transform: scale(1.05);
-        }
-    }
-}
-
-.games{
-    background-color: #000915;
-    padding-top: 128px;
-    padding-bottom: 128px;
-    gap: 32px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-}
-
-
-.game{
-    width: 378px;
-    height: 300px;
-    border-radius: 18px;
-    grid-column: span 4;
-    position: relative;
+  }
+  &__button {
+    border: none;
+    width: 234px;
+    height: 48px;
+    background: #9c0332;
+    border-radius: 30px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #ffffff;
     transition: transform 0.2s;
-    &__text{
-        font-style: normal;
-        font-weight: 600;
-        font-size: 24px;
-        line-height: 32px;
-        color: #FFFFFF;
-        position: absolute;
-        left: 32px;
-        bottom: 32px;
+    &:hover {
+      transform: scale(1.05);
     }
-    &:hover{
-        transform: scale(1.05);
+  }
+}
+
+.games {
+  background-color: #000915;
+  padding-top: 128px;
+  padding-bottom: 128px;
+  gap: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.game {
+  width: 378px;
+  height: 300px;
+  border-radius: 18px;
+  grid-column: span 4;
+  position: relative;
+  transition: transform 0.2s;
+  &__text {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #ffffff;
+    position: absolute;
+    left: 32px;
+    bottom: 32px;
+  }
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.game-online {
+  height: 800px;
+  background-color: #000915;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  &__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 59px;
+    color: #ffffff;
+  }
+  &__img {
+    background-image: url(img/game-online.png);
+
+    height: 333px;
+    width: 485px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__title {
+      text-align: center;
     }
+  }
+
+  .game-online {
+    justify-content: center;
+  }
 }
 
 @media (max-width: 480px) {
+  .header {
+    height: 735px;
+    background-image: url(img/header-mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 238px;
+    &__title {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 39px;
+      text-align: center;
+    }
+    &__text {
+      font-style: normal;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 22px;
+      margin-bottom: 32px;
+      text-align: center;
+      width: 343px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    &__button {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
 
-	.header{
-        height: 735px;
-        background-image: url(img/header-mobile.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        padding-top: 217px;
-        &__title{
-            font-style: normal;
-            font-weight: 700;
-            font-size: 32px;
-            line-height: 39px;
-            text-align: center;
-        }
-        &__text{
-            font-style: normal;
-            font-weight: 300;
-            font-size: 14px;
-            line-height: 22px;
-            margin-bottom: 32px;
-            text-align: center;
-            width: 343px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        &__button{
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
+  .games {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  .game-online {
+    height: 654px;
+    padding-bottom: 56px;
+    &__title {
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 39px;
     }
 
-    .games{
-        padding-right: 16px;
-        padding-left: 16px;
+    &__box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
+
+    &__img {
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      height: 236px;
+      width: 344px;
+    }
+  }
 }
