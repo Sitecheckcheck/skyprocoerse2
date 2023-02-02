@@ -158,6 +158,10 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
+
+  .game {
+    width: 343px;
+  }
   .games {
     padding-right: 16px;
     padding-left: 16px;
@@ -183,4 +187,4 @@ body {
     height: 236px;
     width: 344px;
   }
-}/*# sourceMappingURL=style.css.map */
+}

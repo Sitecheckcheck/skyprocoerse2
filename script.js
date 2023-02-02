@@ -17,17 +17,15 @@
 //   }
 // }
 
-// // Задание 3.1
-// function consolSquared() {
-//   let userNumber = Number(prompt("Введите число"));
-//   console.log(userNumber ** 2);
-// }
+// Задание 3.1
+function consolSquared(userNumber) {
+  console.log(userNumber ** 2);
+}
 
-// // Задание 3.2
-// function returnSquared() {
-//   let userNumber = Number(prompt("Введите число"));
-//   return userNumber ** 2;
-// }
+// Задание 3.2
+function returnSquared(userNumber) {
+  return userNumber ** 2;
+}
 
 // // Задание 4
 // const hello = () => {
