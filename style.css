@@ -25,14 +25,14 @@ body {
   font-weight: 700;
   font-size: 64px;
   line-height: 78px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .header__text {
   font-style: normal;
   font-weight: 300;
   font-size: 18px;
   line-height: 32px;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-top: 32px;
   margin-bottom: 44px;
   width: 481px;
@@ -44,13 +44,13 @@ body {
   border: none;
   width: 234px;
   height: 48px;
-  background: #9C0332;
+  background: #9c0332;
   border-radius: 30px;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
-  color: #FFFFFF;
+  color: #ffffff;
   transition: transform 0.2s;
 }
 .header__button:hover {
@@ -82,7 +82,7 @@ body {
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
-  color: #FFFFFF;
+  color: #ffffff;
   position: absolute;
   left: 32px;
   bottom: 32px;
@@ -91,6 +91,41 @@ body {
   transform: scale(1.05);
 }
 
+.game-online {
+  height: 800px;
+  background-color: #000915;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.game-online__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 59px;
+  color: #ffffff;
+}
+.game-online__img {
+  background-image: url(img/game-online.png);
+  height: 333px;
+  width: 485px;
+}
+
+@media (max-width: 1000px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .header__title {
+    text-align: center;
+  }
+  .game-online {
+    justify-content: center;
+  }
+}
 @media (max-width: 480px) {
   .header {
     height: 735px;
@@ -98,7 +133,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding-top: 217px;
+    padding-top: 238px;
   }
   .header__title {
     font-style: normal;
@@ -123,8 +158,33 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
+
+  .game {
+    width: 343px;
+  }
   .games {
     padding-right: 16px;
     padding-left: 16px;
   }
-}/*# sourceMappingURL=style.css.map */
+  .game-online {
+    height: 654px;
+    padding-bottom: 56px;
+  }
+  .game-online__title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+  }
+  .game-online__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .game-online__img {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 236px;
+    width: 344px;
+  }
+}
