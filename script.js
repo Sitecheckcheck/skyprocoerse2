@@ -1,21 +1,21 @@
-// // Задание 1;
-// const minNumber = (a, b) => {
-//   if (a < b) {
-//     return a;
-//   } else {
-//     return b;
-//   }
-// }
+// Задание 1;
+const minNumber = (a, b) => {
+  if (a < b) {
+    return a;
+  } else {
+    return b;
+  }
+}
 
-// // Задание 2
-// function anEvenNumber() {
-//   let userNumber = Number(prompt("Введите число"));
-//   if (userNumber % 2 == 0) {
-//     return "Число четное";
-//   } else {
-//     return "Число нечетное";
-//   }
-// }
+// Задание 2
+function anEvenNumber() {
+  let userNumber = Number(prompt("Введите число"));
+  if (userNumber % 2 == 0) {
+    return "Число четное";
+  } else {
+    return "Число нечетное";
+  }
+}
 
 // Задание 3.1
 function consolSquared(userNumber) {
@@ -27,38 +27,38 @@ function returnSquared(userNumber) {
   return userNumber ** 2;
 }
 
-// // Задание 4
-// const hello = () => {
-//   let userAge = Number(prompt('Сколько вам лет?'));
-//   if (userAge < 0) {
-//     alert('Вы ввели неправильное значение');
-//   } else if (userAge < 13) {
-//     alert('Привет, друг!');
-//   } else {
-//     alert('Добро пожаловать!');
-//   }
-// }
+// Задание 4
+const hello = () => {
+  let userAge = Number(prompt('Сколько вам лет?'));
+  if (userAge < 0) {
+    alert('Вы ввели неправильное значение');
+  } else if (userAge < 13) {
+    alert('Привет, друг!');
+  } else {
+    alert('Добро пожаловать!');
+  }
+}
 
 // Задание 5
-// const isNumber = (a, b) => {
-//   if (isNaN(a) || isNaN(b)) {
-//     return "Одно или оба значения не являются числом";
-//   } else {
-//     return a * b;
-//   }
-// };
+const isNumber = (a, b) => {
+  if (isNaN(a) || isNaN(b)) {
+    return "Одно или оба значения не являются числом";
+  } else {
+    return a * b;
+  }
+};
 
-// // Задание 6
-// function cubeNumber() {
-//   let a = prompt("введите число");
-//   if (!isNaN(a)) {
-//     b = a ** 3;
-//     c = `${a} в кубе равняется ${b}`;
-//     return c;
-//   } else {
-//     return "Переданный параметр не является числом";
-//   }
-// };
+// Задание 6
+function cubeNumber() {
+  let a = prompt("введите число");
+  if (!isNaN(a)) {
+    b = a ** 3;
+    c = `${a} в кубе равняется ${b}`;
+    return c;
+  } else {
+    return "Переданный параметр не является числом";
+  }
+};
 
 // Задание 7
 function buttonGame() {
