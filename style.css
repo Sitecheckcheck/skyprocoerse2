@@ -107,10 +107,19 @@ body {
   line-height: 59px;
   color: #ffffff;
 }
+.game-online__text {
+  width: 592px;
+}
 .game-online__img {
   background-image: url(img/game-online.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   height: 333px;
   width: 485px;
+}
+.game-online__img2 {
+  background-image: url(img/game-online2.png);
 }
 
 @media (max-width: 1000px) {
@@ -124,6 +133,9 @@ body {
   }
   .game-online {
     justify-content: center;
+  }
+  .game-online__img2 {
+    order: 1;
   }
 }
 @media (max-width: 480px) {
@@ -158,10 +170,6 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
-
-  .game {
-    width: 343px;
-  }
   .games {
     padding-right: 16px;
     padding-left: 16px;
@@ -187,4 +195,7 @@ body {
     height: 236px;
     width: 344px;
   }
-}
+  .game-online__img2 {
+    order: 1;
+  }
+}/*# sourceMappingURL=style.css.map */

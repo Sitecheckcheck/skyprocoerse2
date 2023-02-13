@@ -70,7 +70,7 @@ body {
 }
 
 .game {
-  width: 343px;
+  width: 378px;
   height: 300px;
   border-radius: 18px;
   grid-column: span 4;
@@ -106,11 +106,19 @@ body {
     line-height: 59px;
     color: #ffffff;
   }
+  &__text {
+    width: 592px;
+  }
   &__img {
     background-image: url(img/game-online.png);
-
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     height: 333px;
     width: 485px;
+  }
+  &__img2 {
+    background-image: url(img/game-online2.png);
   }
 }
 
@@ -126,6 +134,9 @@ body {
 
   .game-online {
     justify-content: center;
+    &__img2 {
+      order: 1;
+    }
   }
 }
 
@@ -188,6 +199,9 @@ body {
       background-size: cover;
       height: 236px;
       width: 344px;
+    }
+    &__img2 {
+      order: 1;
     }
   }
 }
