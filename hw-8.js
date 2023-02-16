@@ -9,9 +9,9 @@
 //     return sum;
 // }
 
-// function getMult(arr) {
+// const getMult = (arr) => {
 //     mult = 1;
-//     arr.forEach(el=> {
+//     arr.forEach(el => {
 //         mult*=el;
 //     });
 //     return mult;
@@ -21,7 +21,7 @@
 //     console.log(callback(arr));
 // }
 
-// getResult(getSum, arr)
+// getResult(getMult, arr)
 
 
 
@@ -74,12 +74,12 @@
 
 // // Задание 4:
 // function date30sec() {
-//     let date = new Date();
-//     console.log(date);
+//     let timeId = setInterval(() => {console.log(new Date())}, 3000);
+//     setTimeout(() => {clearInterval(timeId); console.log('30 секунд прошло');}, 30000);
 // }
 
-// let timeId = setInterval(date30sec, 3000);
-// setTimeout(() => {clearInterval(timeId); console.log('30 секунд прошло');}, 30000);
+// date30sec();
+
 
 
 
@@ -96,10 +96,7 @@ function beeps(callb) {
 }
 
 function talk() {
-   
-    setTimeout(() => {
         console.log('Разговор')
-    }, 1000);
 }
 
 calling();
